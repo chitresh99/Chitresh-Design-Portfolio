@@ -1,0 +1,193 @@
+@font-face {
+    font-family: 'Cormorant Garamond Medium Italic';
+    src: url('CormorantGaramond-MediumItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Oddsilni Extra Black Obli';
+    src: url('oddsilni-extra-black-obli.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cormorant Garamond Medium Italic', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+.separator {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    margin-top: 20px;
+}
+
+.about {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.designation,
+.location {
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+    position: relative;
+}
+
+.designation::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: #000;
+    margin-right: 5px;
+}
+
+.designation,
+.location img {
+    margin-right: 5px;
+    margin: 0;
+    padding: 0;
+}
+
+.location img {
+    width: 15px;
+    height: auto;
+    margin-right: 5px;
+}
+
+img {
+    width: 150px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.additional-about {
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.additional-about .about-me {
+    font-family: 'Oddsilni Extra Black Obli', sans-serif;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.additional-about .about-content {
+    margin-top: 2px;
+}
+
+.designs {
+    margin-left: 30px; /* Adjust the margin-left for alignment */
+}
+
+.design-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns in a row */
+    grid-gap: 15px; /* Adjust the gap between items */
+}
+
+.design-item img {
+    width: 100%; /* Make images fill the container */
+    height: auto;
+    max-width: 400px; /* Set your desired maximum width */
+    max-height: 500px; /* Set your desired maximum height */
+    object-fit: contain; /* Ensure the entire image fits within the specified dimensions */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .designs {
+        margin-left: 10px; /* Adjust the margin for smaller screens */
+    }
+
+    .design-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns in a row for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .designs {
+        margin-left: 5px; /* Further adjust the margin for even smaller screens */
+    }
+
+    .design-grid {
+        grid-template-columns: 1fr; /* Single column for very small screens */
+    }
+}
+
+.merchandise {
+    margin-top: 20px; /* Add margin to the top of the Merchandise section */
+    margin-left: 30px; /* Adjust the margin-left for alignment */
+}
+
+.merchandise h2 {
+    margin-bottom: 10px; /* Add margin below the heading */
+}
+
+.merchandise-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns in a row */
+    grid-gap: 15px; /* Adjust the gap between items */
+}
+
+.merchandise-item img {
+    width: 100%; /* Make images fill the container */
+    height: auto;
+    max-width: 400px; /* Set your desired maximum width */
+    max-height: 500px; /* Set your desired maximum height */
+    object-fit: contain; /* Ensure the entire image fits within the specified dimensions */
+}
+
+.footer {
+    background-color: #000; /* Set the background color for the footer */
+    color: #fff; /* Set text color for the footer */
+    padding: 20px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-details h2 {
+    font-family: 'Oddsilni Extra Black Obli', sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-details a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.contact-details i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.icon {
+    width: 20px; /* Set the width of the icons */
+    height: 20px; /* Set the height of the icons */
+    margin-right: 5px; /* Add some spacing to the right of the icons */
+}
+
